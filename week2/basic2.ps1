@@ -1,0 +1,1 @@
+﻿if (Get-Process -Name "chrome" -ErrorAction SilentlyContinue) { Stop-Process -Name "chrome" -Force; Write-Output "Google Chrome has been stopped." } else { Start-Process "chrome.exe" "https://www.champlain.edu"; Write-Output "Google Chrome has been started and directed to Champlain.edu." }
